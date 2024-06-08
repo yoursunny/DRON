@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 import { openUplinks } from "@ndn/cli-common";
-import { Endpoint } from "@ndn/endpoint";
+import { produce } from "@ndn/endpoint";
 import { Segment } from "@ndn/naming-convention2";
 import { Data } from "@ndn/packet";
 import { toHex } from "@ndn/util";
@@ -10,8 +10,7 @@ import { fetchChunk } from "./fetch.js";
 
 await openUplinks();
 
-const endpoint = new Endpoint();
-endpoint.produce(prefix, async (interest) => {
+produce(prefix, async (interest) => {
   if (interest.name.length !== prefix.length + 3 ||
     interest.name.get(-2).length !== 32 ||
     !interest.name.get(-1).is(Segment)) {
