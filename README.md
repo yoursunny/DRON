@@ -45,7 +45,7 @@ See [server/sample.env](server/sample.env) for explanation of the environment va
 The [client](client/) program should run on every client that intends to pull from the Docker registry.
 It does not require a local NDN forwarder.
 
-1. Install Go 1.21.
+1. Install Go 1.22.
 2. Build the client: `env GOBIN=$(pwd) CGO_ENABLED=0 go install github.com/yoursunny/Docker-registry-NDN/client@latest && mv client Docker-registry-NDN-client`
 
 Run `./Docker-registry-NDN-client --help` to see available command line flags.
