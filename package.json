@@ -6,7 +6,7 @@
     "serve": "cd server && node ./main.js",
     "typecheck": "tsc"
   },
-  "packageManager": "pnpm@9.2.0+sha256.94fab213df221c55b6956b14a2264c21c6203cca9f0b3b95ff2fe9b84b120390",
+  "packageManager": "pnpm@10.26.2+sha512.0e308ff2005fc7410366f154f625f6631ab2b16b1d2e70238444dd6ae9d630a8482d92a451144debc492416896ed16f7b114a86ec68b8404b2443869e68ffda6",
   "dependencies": {
     "@ndn/cli-common": "https://ndnts-nightly.ndn.today/cli-common.tgz",
     "@ndn/endpoint": "https://ndnts-nightly.ndn.today/endpoint.tgz",
@@ -14,14 +14,14 @@
     "@ndn/packet": "https://ndnts-nightly.ndn.today/packet.tgz",
     "@ndn/util": "https://ndnts-nightly.ndn.today/util.tgz",
     "@strattadb/environment": "^8.0.2",
-    "dotenv": "^16.4.5",
-    "mnemonist": "^0.39.8",
-    "yargs": "^17.7.2"
+    "dotenv": "^17.2.3",
+    "mnemonist": "^0.40.3",
+    "yargs": "^18.0.0"
   },
   "devDependencies": {
-    "@types/node": "^20.14.2",
-    "@types/yargs": "^17.0.32",
-    "@yoursunny/xo-config": "^0.58.0",
-    "typescript": "~5.4.5"
+    "@types/node": "^25.0.3",
+    "@types/yargs": "^17.0.35",
+    "@yoursunny/xo-config": "0.1002.0",
+    "typescript": "~5.9.3"
   }
 }

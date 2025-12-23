@@ -1,6 +1,6 @@
-FROM node:20-alpine3.18
+FROM node:24-alpine3.22
 WORKDIR /app
-COPY package.json .npmrc /app
+COPY package.json pnpm-workspace.yaml /app
 RUN env NODE_ENV=production corepack pnpm install --prod --no-optional \
  && rm -rf ~/.cache/pnpm ~/.local/share/pnpm/store
 COPY server/ /app/server/

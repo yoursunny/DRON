@@ -12,7 +12,7 @@ Therefore, this program translates blob retrieval requests to NDN segmented obje
 The [server](server/) program should run on the same machine or very close to the Docker registry.
 It requires a local NDN forwarder, which should have a globally reachable name prefix.
 
-1. Install Node.js 20.x and PM2 process manager.
+1. Install Node.js 24.x and PM2 process manager.
 2. Clone this repository.
 3. Copy `server/sample.env` to `server/.env` and make changes according to the instructions within.
 4. Install dependencies: `corepack pnpm install --prod`
@@ -45,7 +45,7 @@ See [server/sample.env](server/sample.env) for explanation of the environment va
 The [client](client/) program should run on every client that intends to pull from the Docker registry.
 It does not require a local NDN forwarder.
 
-1. Install Go 1.22.
+1. Install Go 1.25.
 2. Build the client: `env GOBIN=$(pwd) CGO_ENABLED=0 go install github.com/yoursunny/DRON/client@latest && mv client dron-client`
 
 Run `./dron-client --help` to see available command line flags.

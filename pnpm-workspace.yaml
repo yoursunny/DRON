@@ -1,0 +1,8 @@
+onlyBuiltDependencies:
+  - bufferutil
+  - memif
+  - unrs-resolver
+
+publicHoistPattern:
+  - '@types/*'
+  - xo

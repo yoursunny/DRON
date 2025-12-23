@@ -1,5 +1,5 @@
 import { console } from "@ndn/util";
-import LRUMap from "mnemonist/lru-map.js";
+import { LRUMap } from "mnemonist";
 
 import { env } from "./env.js";
 
