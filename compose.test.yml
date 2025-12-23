@@ -35,8 +35,8 @@ services:
       - registry
       - nfd
     environment:
-      DOCKER_NDN_REGISTRY: http://172.22.250.10:5000
-      DOCKER_NDN_NAME: /docker
+      DRON_REGISTRY: http://172.22.250.10:5000
+      DRON_NAME: /docker
     networks:
       net:
         ipv4_address: 172.22.250.11
@@ -53,7 +53,7 @@ services:
       --listen :3000 --upstream http://172.22.250.10:5000
       --name /docker --router 172.22.250.63:6363
     environment:
-      DOCKER_NDN_LOG: DEBUG
+      DRON_LOG: DEBUG
     networks:
       net:
         ipv4_address: 172.22.250.20

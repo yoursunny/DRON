@@ -17,7 +17,7 @@ import (
 
 var logger = func() *zap.Logger {
 	var lvl zapcore.Level
-	if environ, ok := os.LookupEnv("DOCKER_NDN_LOG"); ok {
+	if environ, ok := os.LookupEnv("DRON_LOG"); ok {
 		lvl.Set(environ)
 	}
 

@@ -8,35 +8,35 @@ dotenv.config();
 
 export const env = makeEnv({
   registry: {
-    envVarName: "DOCKER_NDN_REGISTRY",
+    envVarName: "DRON_REGISTRY",
     parser: parsers.url,
     required: true,
   },
   name: {
-    envVarName: "DOCKER_NDN_NAME",
+    envVarName: "DRON_NAME",
     parser: parsers.string,
     required: true,
   },
   chunkSize: {
-    envVarName: "DOCKER_NDN_CHUNK_SIZE",
+    envVarName: "DRON_CHUNK_SIZE",
     parser: parsers.positiveInteger,
     required: false,
     defaultValue: 7777,
   },
   concurrency: {
-    envVarName: "DOCKER_NDN_CONCURRENCY",
+    envVarName: "DRON_CONCURRENCY",
     parser: parsers.positiveInteger,
     required: false,
     defaultValue: 8,
   },
   fetchChunks: {
-    envVarName: "DOCKER_NDN_FETCH_CHUNKS",
+    envVarName: "DRON_FETCH_CHUNKS",
     parser: parsers.positiveInteger,
     required: false,
     defaultValue: 512,
   },
   fetchCaches: {
-    envVarName: "DOCKER_NDN_FETCH_CACHES",
+    envVarName: "DRON_FETCH_CACHES",
     parser: parsers.positiveInteger,
     required: false,
     defaultValue: 8,

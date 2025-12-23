@@ -33,8 +33,8 @@ Start the server container:
 ```bash
 docker run -d --name dron-server \
   --mount type=bind,source=/run/nfd/nfd.sock,target=/run/nfd/nfd.sock,readonly=true \
-  -e DOCKER_NDN_REGISTRY=http://172.17.0.2:5000 \
-  -e DOCKER_NDN_NAME=/docker \
+  -e DRON_REGISTRY=http://172.17.0.2:5000 \
+  -e DRON_NAME=/docker \
   docker.yoursunny.dev/dron-server
 ```
 
